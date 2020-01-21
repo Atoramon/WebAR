@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+
+<html>
+<head>
+<script src="https://aframe.io/releases1.0.3/aframe.min.js"></script>
+
+ <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style='margin: 0; overflow: hidden;'>
+
+  <a-scene embedded arjs="debugUIEnabled:false;">
+
+
+    <a-assets>
+      <a-asset-item id="Iwaroid" src="asset/Iwaroid.glb"></a-asset-item>
+    </a-assets>
+
+
+    <a-marker type='pipipi' url='asset/pipipi-qr-code.patt'>
+
+
+      <a-gltf-model src="#Iwaroid"></a-gltf-model>
+
+    </a-marker>
+
+
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+
+</html>
